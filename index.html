@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif">
+      <strong>Instruction:</strong>
+    </h1>
+    <h2>As of now 1 question available!</h2>
+
+    <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif">
+      1. What is the size of double data type in Java?
+    </h2>
+    <div style="text-align: center; font-size: large">
+      <button id="c" onclick="correct()" class="w3-button">8 bytes</button>
+      <br />
+      <br />
+      <button id="w" onclick="wrong()" class="w3-button">4 bytes</button>
+      <br />
+      <br />
+      <button id="w1" onclick="wrong1()" class="w3-button">2 bytes</button>
+      <br />
+      <br />
+      <button id="w2" onclick="wrong2()" class="w3-button">16 bytes</button>
+    </div>
+
+    <script>
+      function correct() {
+        document.getElementById("c").innerHTML = "Correct";
+        document.getElementById("c").style.backgroundColor = "Green";
+      }
+
+      function wrong() {
+        document.getElementById("w").innerHTML = "Wrong";
+        document.getElementById("w").style.backgroundColor = "Red";
+      }
+
+      function wrong1() {
+        document.getElementById("w1").innerHTML = "Wrong";
+        document.getElementById("w1").style.backgroundColor = "Red";
+      }
+
+      function wrong2() {
+        document.getElementById("w2").innerHTML = "Wrong";
+        document.getElementById("w2").style.backgroundColor = "Red";
+      }
+    </script>
+  </body>
+</html>
